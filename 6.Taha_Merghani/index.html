@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha Mohammed Merghani Taha - Digital Business Card</title>
+    <!-- Favicon (Relative Local Asset) -->
+            <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- Main Card Container -->
+        <div class="card-container">
+
+            <!-- Top Logo Box -->
+            <div class="logo-card">
+                <img src="assets/logo.png" alt="شركة المطاحن الرابعة - MC4 Logo" class="company-logo">
+            </div>
+
+            <!-- Inner Profile Container -->
+            <div class="inner-card">
+
+                <!-- Name & Role (Photo circle completely removed) -->
+                <h1 class="profile-name">Taha Merghani</h1>
+                <p class="full-name-sub">Taha Mohammed Merghani Taha</p>
+                <div class="profile-role">
+                    <span class="role-title">Role</span>
+                    <span class="dot">•</span>
+                    <span class="role-desc">QHSE Director</span>
+                </div>
+
+                <!-- Contact Info Links -->
+                <div class="contact-links">
+                    <a href="mailto:taha@mc4.com.sa" class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                        <span>taha@mc4.com.sa</span>
+                    </a>
+
+                    <a href="tel:0501110958" class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>0501110958</span>
+                    </a>
+                </div>
+
+                <!-- Download Contact Button -->
+                <button class="btn-download-vcard" onclick="downloadVCard()">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <span>Download Contact</span>
+                </button>
+
+                <!-- Action Social Buttons -->
+                <div class="social-buttons">
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/966501110958" target="_blank" class="social-btn btn-whatsapp">
+                        <div class="social-btn-content">
+                            <div class="icon-circle icon-whatsapp">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.762.459 3.481 1.332 5.001l-1.417 5.176 5.293-1.388c1.468.801 3.123 1.222 4.777 1.223h.005c5.506 0 9.989-4.479 9.99-9.985 0-2.667-1.037-5.176-2.923-7.062a9.92 9.92 0 0 0-7.067-2.949zm5.728 14.283c-.244.685-1.42 1.309-1.98 1.393-.517.077-1.159.109-1.864-.117-.428-.136-.977-.318-1.68-.622-2.96-1.277-4.891-4.249-5.039-4.446-.148-.196-1.205-1.604-1.205-3.06 0-1.455.763-2.171 1.038-2.464.275-.294.6-.368.799-.368.199 0 .397.009.569.018.181.01.422-.069.663.506.244.58.835 2.036.909 2.183.074.147.123.319.025.515-.098.196-.148.319-.296.49-.148.172-.311.383-.444.515-.147.147-.302.308-.13.603.172.295.765 1.261 1.642 2.043 1.129 1.006 2.08 1.318 2.374 1.465.294.147.468.123.64-.074.172-.196.737-.859.933-1.153.196-.294.393-.245.688-.136.295.109 1.868.881 2.187 1.04.319.159.531.235.604.358.074.123.074.71-.17 1.395z"/>
+                                </svg>
+                            </div>
+                            <span class="social-btn-label">WHATSAPP</span>
+                        </div>
+                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn Button -->
+                    <a href="#" class="social-btn btn-linkedin">
+                        <div class="social-btn-content">
+                            <div class="icon-circle icon-linkedin">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                                </svg>
+                            </div>
+                            <span class="social-btn-label">Linkedin</span>
+                        </div>
+                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- QR Code Box -->
+                <div class="qr-container">
+                    <div class="qr-code-box" id="qrCodeContainer" onclick="openQRModal()" title="Click to view & download QR Code">
+                        <!-- Dynamic QR Image inserted by JS -->
+                        <div class="qr-overlay">
+                            <svg class="qr-download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Text with WhatsApp link on phone number -->
+            <footer class="card-footer">
+                <span>Created by Musab - <a href="https://wa.me/967773219299" target="_blank" class="footer-wa-link">+967 773219299</a></span>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Fullscreen QR Code Modal Overlay -->
+    <div id="qrModal" class="qr-modal-overlay" onclick="closeQRModal()">
+        <div class="qr-modal-card" onclick="event.stopPropagation()">
+            <button class="qr-modal-close" onclick="closeQRModal()">&times;</button>
+            <h2 class="qr-modal-title">Scan QR Code</h2>
+            <div id="modalQRContainer" class="modal-qr-box"></div>
+            <p class="qr-modal-sub">Taha Mohammed Merghani Taha</p>
+            <p class="qr-modal-url" id="modalURL"></p>
+            
+            <button class="btn-download-qr" onclick="downloadQRImage()">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download QR Image</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Downloaded!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
